@@ -7,8 +7,8 @@
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -30,13 +30,15 @@ p {
 /* Header
 ----------------------------*/
 .header {
-  padding: 10px;
+  padding: 0 0 10px 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: darkblue;
   color: #ffffff;
 }
 
 .header h1 {
+  margin-top: 10px;
+  padding-left: 20px;
   display: inline-block;
   font-size: 48px;
   color: darkblue;
@@ -72,6 +74,9 @@ p {
   background-position: center center;
   min-height: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 /* Body draft
@@ -82,6 +87,10 @@ p {
   font-size: 45px;
   padding-top: 20px;
   line-height: 1.6em;
+  /* position:relative; */
+  top: 14px;
+  z-index: 100;
+  text-align: right;
 }
 
 #main {
@@ -99,4 +108,8 @@ p {
   box-sizing: border-box;
   letter-spacing: .2em;
   word-spacing: 1em;
+}
+
+#About-Me {
+
 }
